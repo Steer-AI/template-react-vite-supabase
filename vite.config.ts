@@ -8,7 +8,18 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "0.0.0.0",
     port: 3000,
+    strictPort: true,
     allowedHosts: [
+      ".e2b.dev", 
+      ".e2b-foxtrot.dev"
+    ]
+  },
+  preview: {
+    host: "0.0.0.0",
+    port: 3000,
+    strictPort: true,
+    allowedHosts: [
+      "steercode.dev",
       ".e2b.dev", 
       ".e2b-foxtrot.dev"
     ]
